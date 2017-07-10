@@ -1,0 +1,101 @@
+MICRON Teradata Server - 
+
+jdbc:teradata://BOTERAPROD09/TMODE=TERA,LOGMECH=LDAP,USER=TERADATAREADER,PASSWORD=mypwdhere 
+http://collab.micron.com/is/wiki/Pages/How%20do%20I%20connect%20to%20Teradata%20from%20Unix.aspx 
+
+
+
+-----------------------------------
+
+
+Details about Node JS - Teradata connection:
+
+https://www.npmjs.com/package/node-teradata
+
+https://stackoverflow.com/questions/30113481/can-i-connect-nodejs-with-teradata-any-nodejs-npm-for-this
+
+
+-------------------------
+Sending POST request from AJAX to NODE JS
+
+https://stackoverflow.com/questions/13478464/how-to-send-data-from-jquery-ajax-request-to-node-js-server
+
+---------------------------------------
+Configure npm to install packages:
+
+https://stackoverflow.com/questions/7559648/is-there-a-way-to-make-npm-install-the-command-to-work-behind-proxy
+
+npm config set proxy http://proxy.micron.com:8080
+
+Install JDK 1.8
+Install JAR as mentioned here : https://www.npmjs.com/package/node-teradata
+SET JAVA_HOME as a system variable in system properties and direct it to the jdk folder
+
+Install windows dev tools 
+npm install jdbc
+npm install node-teradata
+
+-------------------------------
+11S00AH608Y1M10C1B8178
+11S68Y7748Y1M10C4D0CD4
+11S68Y7748Y1M10C6B89E5
+P60606027460
+ZAV090QS
+MSA190600JT
+14300CE2E560
+14470F54B05F
+14220C2F6DA0
+1238034CF384
+
+
+
+
+------------------
+To enable a cross domain chrome browser:
+
+https://stackoverflow.com/questions/20035101/no-access-control-allow-origin-header-is-present-on-the-requested-resource
+
+The easy way is to just add the extension in google chrome to allow access using CORS.
+
+(https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en-US)
+
+Just enable this extension whenever you want allow access to no 'access-control-allow-origin' header request.
+
+Or
+
+In Windows, paste this command in run window
+cd C:\Program Files (x86)\Google\Chrome\Application
+chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
+this will open a new chrome browser which allow access to no 'access-control-allow-origin' header request.
+
+chrome://net-internals/#events
+
+
+-------------------------
+Solved: ERR_EMPTY_RESPONSE – No Data Received
+https://www.wiknix.com/solved-err_empty_response-no-data-received/
+
+------------------------------------
+https://stackoverflow.com/questions/14527387/script7002-xmlhttprequest-network-error-0x2ef3-could-not-complete-the-operati
+
+IE makes an AJAX request every 60 seconds, setting Keep-Alive in the request.
+At the same time, server knows that the Keep-Alive timeout value is ignored by IE, so it starts the TCP connection close process (in the case of Chrome this is started by the client)
+IE receives the close connection request for the previously sent request. Since this is not expected by IE, it throws an error and aborts.
+Server still seems to be responding to the request even though the connection is closed.
+
+
+
+
+--------------------------------------------
+https://stackoverflow.com/questions/5798707/browser-timeouts
+Browser Timeouts
+
+https://stackoverflow.com/questions/1342310/where-can-i-find-the-default-timeout-settings-for-all-browsers
+timeout settings for browsers
+
+
+
+-----------------------------------------------------------
+WEB HOSTING:
+
+http://collab.micron.com/is/sites/webcenter/_layouts/15/WopiFrame2.aspx?sourcedoc=/is/sites/webcenter/Secure%20Web%20Environment/How%20to%20Submit%20Web%20Hosting%20Request%20in%20Secure%20Web%20Environment.docx&action=default&DefaultItemOpen=1

@@ -1,0 +1,17 @@
+If FirstCharacter of Market Data Segment= "C" Or FirstCharacter = "M" Or FirstCharacter = "1" THEN
+                IF Field Life > 3
+                    Value = "No"
+                Else
+                    Value = "Yes"
+                End If
+        
+
+ ElseIf FirstCharacter = "P" Or FirstCharacter = "9" Or FirstCharacter = "S" Then
+                 IF Field Life > 5 Then
+                    Value = "No"
+                Else
+                    Value = "Yes"
+                End If
+        
+ Else
+    Value = "Unable to identify first character of Market Segment value. Please update logic"
