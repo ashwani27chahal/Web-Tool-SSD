@@ -1,2 +1,2 @@
 # ssd-warranty
-SSD Warranty Reporting Mron SQRA
+SSD Warranty Reporting Micron SQRA
