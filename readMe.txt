@@ -126,21 +126,4 @@ GIT BASH COMMANDS: (for initial commit)
 
 
 
--------------------------------------------------------------------WEBSITE DEPLOY---------------------------------------------------
-RAISE a request
-
-Taregt Group : SSD_WARRANTY_SHIP_DATE_WEBCONTACT
-Owner Group:   SSD_WARRANTY_SHIP_DATE_WEBFORM
-
-
-The hosting of “ssdwarranty” web application in Boise Secure Web environment is completed successfully. Find below the Test and Production web links for the same.
-
-TEST: http://webtest.micron.com/ssdwarranty/ 
-PROD:  http://web.micron.com/ssdwarranty/
-
-
-Copy all the backend and frontend files to - \\bowebfs01\bowebtest\ssdwarranty\   and perform testing.
------------------------------
- 
-
 
