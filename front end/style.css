@@ -10,26 +10,34 @@
     text-align: center;
     width: 100%;
 }
-.navbar-brand {float:none;}
+
+.navbar-brand {
+	float:none;
+}
+
+#pageHeading {
+    color:white;
+    font-weight: 600;
+    font-size: 25px  
+}
 
 #demotable{
 	display:none;
 }
-
 
 .button1 {
     background-color: white; 
     color: black; 
     border: 2px solid #008CBA;
     border-radius: 8px;
-    width: 100px;
+    width: 200px;
 }
 
 .button1:hover {
     background-color: #008CBA;
     color: white;
     border-radius: 8px;
-    width: 100px;
+    width: 200px
 }
 
 .button2 {
@@ -57,3 +65,6 @@ th {
     color: white;
 }
 
+#exportButton {
+    float: right
+}

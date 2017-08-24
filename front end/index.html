@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<HTML lang="en">
+
+	<HEAD>
+		<TITLE>SSD Warranty Ship Date</TITLE>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />  <!--to make version 11 of IE as the default doc explorer-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="icon.png" sizes="16x16">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="FileSaver.min.js"></script>
+        <script type="text/javascript" src="xlsx.core.min.js"></script>
+        <script type="text/javascript" src="tableExport.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+
+	</HEAD>
+
+	<BODY>
+		<nav class="navbar navbar-inverse">
+			<p id = "contactUs">Contact us: <a href="mailto:Chollingshea@micron.com?Subject=SSD%20Warranty%20Date%20Reporting%20-Web%20Tool" target="_top"><strong><u>Chollingshea@micron.com</u></strong></a></p>
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<p id = "pageHeading"><a class="navbar-brand" href="#"></a>
+						<img src="https://www.micron.com/~/media/track-3-images/new-images/about/media-relations/650x180_micronlogo.png?la=en" class="img-thumbnail" alt="Micron Logo" width="200" height="200"> <br>
+						SQRA - SSD Warranty Ship Date Lookup
+					</p>
+				</div>
+				<table class="table" id = "stripe">
+					<thead>
+						<tr>
+							<th></th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+		</nav>
+
+		<div class="container">
+			<h2>Input Serial Numbers </h2>
+			<p>
+                Please provide the list of serial numbers in the below input box and click Submit
+            </p>   
+			<p>
+                <b><u>NOTE: The time to fetch the results depends on the Teradata performance and the Server location relative the user.  If the request times out, please wait for at least 5 minutes before trying again.</u></b><br><br>
+            </p>
+			<div class="row" >
+				<div>
+					<textarea class="form-control" rows="10" cols="20" placeholder="List of Serial IDs here..." id="serialNumbers" ></textarea>               
+				</div>
+			</div>
+			<div class="row">
+                <br>
+				Enter the Serial IDs and submit on a server (Boise or Singapore). If it doesn't return the anticipated number of rows, please try submitting on the alternate Server. <br>	
+                <b><u>NOTE: Please click 'RESET' buttton prior to submitting any request.</u></b><br><br><br>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-md-offset-3">
+					<button class="button1" id="SubmitBoiseResults">Submit on Boise Server</button>
+					<button class="button2" id="ClearResults">Reset</button>
+                    <button class="button1" id="SubmitSingaporeResults">Submit on Singapore Server</button>
+				</div>
+            </div>
+            
+			<div class="row" id="loadingIndicator">
+				<div class="col-md-2 col-md-offset-5">
+					<img src="loading.gif" width="150">
+					<p>Fetching results from Teradata..</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" id="demotable">
+			<h2>Result Table</h2>
+			<p>Below is the resultsheet for the entered Serial IDs</p>
+            <button class = "btn btn-success" id = "exportButton">Export</button>
+            <p id = "inputCount">Number of serial IDs entered: </p>
+            <p id = "outputCount">Number of records returned from TeraData: </p>
+			<table class="table table-bordered" id="ResultTable">
+				<thead>
+					<tr>
+						<th>Lot Number</th>
+						<th>Serial ID</th>
+						<th>Warranty Shipment Date</th>
+						<th>RMA received Date</th>
+						<th>Sold To Number</th>
+						<th>Sold To Name</th>
+						<th>Market Segment</th>
+						<th>Field Life(years)</th>
+						<th>In Warranty</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</BODY>
+
+</HTML>

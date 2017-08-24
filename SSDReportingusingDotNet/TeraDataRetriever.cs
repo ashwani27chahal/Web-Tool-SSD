@@ -14,16 +14,19 @@ namespace SSDReportingusingDotNet
     //This is a class i made to abstract the teradata data retrieval part
     public class TeraDataRetriever : IDisposable
     {
+        //This is the teradata connection object named con
         TdConnection con;
         public Boolean connectionError;
         public String connectionErrorMessage;
+        //dataSource DB Username and password details are provided here as arguments
         public TeraDataRetriever(String dataSource, String Database, String Username, String Password)
         {
             try
             {
+                //connectionString Builder object
                 TdConnectionStringBuilder conStrBuilder = new TdConnectionStringBuilder();
 
-                // i got the server from the ldap odbc description of the connection
+                
 
                 conStrBuilder.DataSource = dataSource;
 
@@ -39,6 +42,7 @@ namespace SSDReportingusingDotNet
 
                 Console.WriteLine("conn string was: " + conStrBuilder.ConnectionString);
 
+                //assigning con to a new object by feeding connection string to the constructor
                 con = new TdConnection
                 {
                     ConnectionString = conStrBuilder.ConnectionString
@@ -60,7 +64,7 @@ namespace SSDReportingusingDotNet
             {
                 var queryData = new DataTable();
                 var command = new TdCommand(query, con);
-                command.CommandTimeout = 120;
+                command.CommandTimeout = 1200;
                 var adapter = new TdDataAdapter(command);
                 adapter.Fill(queryData);
 

@@ -1,4 +1,7 @@
-
+This is a project to create a website named SSD Warranty Date Repoorting. 
+This website takes Serial IDs as user input, hits the teradata, and fetch the warranty details in response.
+To create this website we have used .NET framework.
+Front End(jQuery) --> Backend (.Net framework, WCF Rest Services) --> Backend(Teradata)
 
 
 --------------------------------------------
@@ -105,5 +108,39 @@ http://www.c-sharpcorner.com/UploadFile/9bff34/3-ways-to-convert-datatable-to-js
 -----------------------------------------------------
 
 
-GITHUB REPO USING ISUAL STUDIO 2015
+GITHUB REPO USING VISUAL STUDIO 2015
 https://www.infragistics.com/community/blogs/dhananjay_kumar/archive/2016/07/21/step-by-step-working-with-github-repository-and-visual-studio-2015.aspx
+
+
+----------------------------------
+
+
+GIT BASH COMMANDS: (for initial commit)
+
+1. got to existing project (cd projectname)
+2. git init (to reinstantiate your .git )
+3. git add --all (ad everything to staging)
+4. git commit -m "commit comments"
+5. git remote add origin <your remote repo path here> (not required with every commit - only for the first time)
+6. git push -u origin master (to publish your commit to remote repo)
+
+
+
+-------------------------------------------------------------------WEBSITE DEPLOY---------------------------------------------------
+RAISE a request
+
+Taregt Group : SSD_WARRANTY_SHIP_DATE_WEBCONTACT
+Owner Group:   SSD_WARRANTY_SHIP_DATE_WEBFORM
+
+
+The hosting of “ssdwarranty” web application in Boise Secure Web environment is completed successfully. Find below the Test and Production web links for the same.
+
+TEST: http://webtest.micron.com/ssdwarranty/ 
+PROD:  http://web.micron.com/ssdwarranty/
+
+
+Copy all the backend and frontend files to - \\bowebfs01\bowebtest\ssdwarranty\   and perform testing.
+-----------------------------
+ 
+
+

@@ -9,7 +9,7 @@ using System.Text;
 namespace SSDReportingusingDotNet
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IRestServiceImpl" in both code and config file together.
-    [ServiceContract]
+    [ServiceContract] 
     public interface IRestServiceImpl
     {
         [OperationContract]
@@ -17,8 +17,18 @@ namespace SSDReportingusingDotNet
             Method = "GET",
             ResponseFormat = WebMessageFormat.Json,
             BodyStyle = WebMessageBodyStyle.Wrapped,
-            UriTemplate = "json/{id1}/{id2}"
+            UriTemplate = "boise/{id1}/{id2}"
             )]
         string GetInventoryData(string id1, string id2);
+
+
+        [OperationContract]
+        [WebInvoke(
+            Method = "GET",
+            ResponseFormat = WebMessageFormat.Json,
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            UriTemplate = "singapore/{id1}/{id2}"
+            )]
+        string GetInventoryDatafromSingapore(string id1, string id2);
     }
 }

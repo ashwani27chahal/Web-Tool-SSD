@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSDReportingusingDotNet", "SSDReportingusingDotNet\SSDReportingusingDotNet.csproj", "{69F3F534-5E5B-4B43-930B-4FBA4A12B5AB}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EDACDB41-31A3-4A18-B3B7-278F32ADB79D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSDReportingusingDotNet", "SSDReportingusingDotNet\SSDReportingusingDotNet.csproj", "{69F3F534-5E5B-4B43-930B-4FBA4A12B5AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -8,3 +8,13 @@ C:\Users\achahal\Documents\Visual Studio 2017\Projects\SSDReportingusingDotNet\S
 C:\Users\achahal\Documents\Visual Studio 2017\Projects\SSDReportingusingDotNet\SSDReportingusingDotNet\obj\Debug\SSDReportingusingDotNet.csprojResolveAssemblyReference.cache
 C:\Users\achahal\Documents\Visual Studio 2017\Projects\SSDReportingusingDotNet\SSDReportingusingDotNet\obj\Debug\SSDReportingusingDotNet.dll
 C:\Users\achahal\Documents\Visual Studio 2017\Projects\SSDReportingusingDotNet\SSDReportingusingDotNet\obj\Debug\SSDReportingusingDotNet.pdb
+C:\Users\achahal\gitProjects\ssd-warranty\SSDReportingusingDotNet\bin\SSDReportingusingDotNet.dll.config
+C:\Users\achahal\gitProjects\ssd-warranty\SSDReportingusingDotNet\bin\SSDReportingusingDotNet.dll
+C:\Users\achahal\gitProjects\ssd-warranty\SSDReportingusingDotNet\bin\SSDReportingusingDotNet.pdb
+C:\Users\achahal\gitProjects\ssd-warranty\SSDReportingusingDotNet\bin\Newtonsoft.Json.dll
+C:\Users\achahal\gitProjects\ssd-warranty\SSDReportingusingDotNet\bin\Teradata.Client.Provider.dll
+C:\Users\achahal\gitProjects\ssd-warranty\SSDReportingusingDotNet\bin\Teradata.Net.Security.Tdgss.dll
+C:\Users\achahal\gitProjects\ssd-warranty\SSDReportingusingDotNet\bin\Newtonsoft.Json.xml
+C:\Users\achahal\gitProjects\ssd-warranty\SSDReportingusingDotNet\obj\Debug\SSDReportingusingDotNet.csprojResolveAssemblyReference.cache
+C:\Users\achahal\gitProjects\ssd-warranty\SSDReportingusingDotNet\obj\Debug\SSDReportingusingDotNet.dll
+C:\Users\achahal\gitProjects\ssd-warranty\SSDReportingusingDotNet\obj\Debug\SSDReportingusingDotNet.pdb
