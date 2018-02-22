@@ -108,22 +108,4 @@ http://www.c-sharpcorner.com/UploadFile/9bff34/3-ways-to-convert-datatable-to-js
 -----------------------------------------------------
 
 
-GITHUB REPO USING VISUAL STUDIO 2015
-https://www.infragistics.com/community/blogs/dhananjay_kumar/archive/2016/07/21/step-by-step-working-with-github-repository-and-visual-studio-2015.aspx
-
-
-----------------------------------
-
-
-GIT BASH COMMANDS: (for initial commit)
-
-1. got to existing project (cd projectname)
-2. git init (to reinstantiate your .git )
-3. git add --all (ad everything to staging)
-4. git commit -m "commit comments"
-5. git remote add origin <your remote repo path here> (not required with every commit - only for the first time)
-6. git push -u origin master (to publish your commit to remote repo)
-
-
-
 
